@@ -1,34 +1,40 @@
 # Experiment No: 1e – SEB-Minimum of Three Numbers
 
 ## AIM  
-To write a Python program to find the minimum between three integer numbers using a conditional expression (Ternary operator).
+Write a  python program to determine traffic status based on the fraction of roadways covered.
+The variable traffic_fraction
+>0.5 high traffic
+>0.25 and <=0.5 medium traffic
+<0.25 Low Traffic 
 
 ## ALGORITHM  
-1. Begin the program.  
-2. Read the three numbers: `num1`, `num2`, and `num3` from the user.  
-3. Compare `num1`, `num2`, and `num3` to find the smallest number:  
-   - If `num1` is less than or equal to both `num2` and `num3`, then `num1` is the minimum.  
-   - Else, if `num2` is less than or equal to both `num1` and `num3`, then `num2` is the minimum.  
-   - Otherwise, `num3` is the minimum.  
-4. Print the minimum value along with the input numbers in the format:  
-   `"The minimum of num1, num2, num3 is min_num."`  
-5. Terminate the program.
-
+1.Start
+2.Input the value of traffic_fraction
+3.If traffic_fraction > 0.5
+4.Set traffic_status to "High Traffic"
+5.Else if traffic_fraction > 0.25 and traffic_fraction <= 0.5
+6.Set traffic_status to "Medium Traffic"
+7.Else
+8.Set traffic_status to "Low Traffic"
+9.Output the traffic_status
+10.End
 ## PROGRAM
 ```python
-# Reg.No-
-# Name-
-# Write your code here
-
-num1 = int(input())
-num2 = int(input())
-num3 = int(input())
-
-min_num = num1 if (num1 <= num2 and num1 <= num3) else num2 if (num2 <= num1 and num2 <= num3) else num3
-
-print(f"The minimum of {num1}, {num2}, {num3} is {min_num}")
+a=float(input())
+if(a>0.5):
+    print("High Traffic!")
+elif(a>0.5 and a<=0.25):
+        print("medium traffic")
+elif(a<0.25):
+        print("Low Traffic")
+else:
+    print("Medium Traffic")
 ```
 
 ## OUTPUT
 
+![Screenshot (188)](https://github.com/user-attachments/assets/87862197-c4a3-44ba-8977-42d1d67ba278)
+
+
 ## RESULT
+Thus , the program to determine traffic status based on the fraction of roadways covered was implemented and executed successfully.
